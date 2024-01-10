@@ -3,35 +3,73 @@ import Layout from "../layouts/Layout.astro";
 import InstagramIcon from "../icons/Instagram.astro";
 import GmailIcon from "../icons/Gmail.astro";
 import PhoneIcon from "../icons/Phone.astro";
+import pic1 from "../images/con-1.jpeg";
+import pic2 from "../images/con-2.jpeg";
+import pic3 from "../images/con-3.jpeg";
+import { Image } from "astro:assets";
 ---
 
 <Layout title="Contact">
   <div class="wrapper">
-    <div class="title">Contact Us <br /></div>
-    <h1>Let's talk about <br />your event</h1>
+    <h1 class="title">
+      Capture the Moment with Our Photo Booth Rental Services in Vancouver<br />
+    </h1>
+    <div class="sub-title">We're available for events all over Vancouver</div>
+    <div class="img-grid">
+      <figure><Image src={pic1} alt="sasasa" /></figure>
+      <figure><Image src={pic2} alt="sasasa" /></figure>
+      <figure><Image src={pic3} alt="sasasa" /></figure>
+    </div>
+    <h3>Have questions or need more information? Get in touch!</h3>
+    <p>
+      Whether you're looking for a quote, seeking additional details, or eager
+      to share more about your plans, we're here for you. Feel free to call us
+      or reach out through our social media channels.
+    </p>
     <div class="info-wrapper">
       <div class="icon">
-        <a href="tel:+17782318977" target="_blank"><PhoneIcon />&nbsp; &nbsp; +1 7782318977</a>
+        <a href="tel:+17782318977" target="_blank"
+          ><PhoneIcon />&nbsp; &nbsp; +1 7782318977</a
+        >
       </div>
       <div class="icon">
-        <a href="mailto:jehovahentertainment@outlook.com" target="_blank"><GmailIcon />&nbsp; &nbsp; jehovahentertainment@outlook.com</a>
+        <a href="mailto:jehovahentertainment@outlook.com" target="_blank"
+          ><GmailIcon />&nbsp; &nbsp; jehovahentertainment@outlook.com</a
+        >
       </div>
       <div class="icon">
         <a href="https://www.instagram.com/ima_peace_maker/" target="_blank"
-          ><InstagramIcon />&nbsp; &nbsp;@ima_peace_maker</a>
+          ><InstagramIcon />&nbsp; &nbsp;@ima_peace_maker</a
+        >
       </div>
     </div>
   </div>
 </Layout>
 <style>
+  .img-grid {
+    display: flex;
+  }
+  figure {
+    width: 33.33%;
+    position: relative;
+    background-color: #eaeaea;
+    padding: 14px;
+  }
+  figure img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
   .wrapper {
     flex-direction: column;
     justify-content: center;
     align-items: center;
     margin-bottom: 70px;
     display: flex;
+    padding: 15px;
   }
-  .title {
+  .sub-title {
     color: #000;
     text-align: left;
     letter-spacing: 0.02em;
@@ -46,37 +84,47 @@ import PhoneIcon from "../icons/Phone.astro";
     color: #000;
     text-align: center;
     white-space: normal;
-    margin-top: 0;
+    margin-top: 1em;
     margin-bottom: 0;
     font-size: 48px;
     font-weight: 800;
     line-height: 62.4px;
   }
 
-  .info-wrapper{
-    margin-top: 4em;
+  h3 {
+    font-size: 22px;
+    font-weight: 800;
+  }
+
+  p {
+    font-size: 18px;
+    margin-top: -8px;
+    padding-bottom: 30px;
+    border-bottom: 1px solid;
+  }
+  .info-wrapper {
+    margin-top: 1em;
     display: flex;
     flex-direction: column;
     gap: 2em;
     align-items: flex-start;
   }
   .icon {
-    
     margin-right: 0.6em;
     margin-left: 0.6em;
   }
 
-  .icon a{
+  .icon a {
     color: #000508;
     display: flex;
-     align-items: center;
+    align-items: center;
   }
   .icon a:hover {
     fill: #999999;
     color: #999999;
   }
 
-  a{
+  a {
     text-decoration: none;
   }
 </style>

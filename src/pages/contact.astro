@@ -1,0 +1,82 @@
+---
+import Layout from "../layouts/Layout.astro";
+import InstagramIcon from "../icons/Instagram.astro";
+import GmailIcon from "../icons/Gmail.astro";
+import PhoneIcon from "../icons/Phone.astro";
+---
+
+<Layout title="contact">
+  <div class="wrapper">
+    <div class="title">Contact Us <br /></div>
+    <h1>Let's talk about <br />your event</h1>
+    <div class="info-wrapper">
+      <div class="icon">
+        <a href="tel:+17782318977" target="_blank"><PhoneIcon />&nbsp; &nbsp; +1 7782318977</a>
+      </div>
+      <div class="icon">
+        <a href="mailto:jehovahentertainment@outlook.com" target="_blank"><GmailIcon />&nbsp; &nbsp; jehovahentertainment@outlook.com</a>
+      </div>
+      <div class="icon">
+        <a href="https://www.instagram.com/ima_peace_maker/" target="_blank"
+          ><InstagramIcon />&nbsp; &nbsp;@ima_peace_maker</a>
+      </div>
+    </div>
+  </div>
+</Layout>
+<style>
+  .wrapper {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 70px;
+    display: flex;
+  }
+  .title {
+    color: #000;
+    text-align: left;
+    letter-spacing: 0.02em;
+    text-transform: none;
+    margin-bottom: 23px;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 26px;
+  }
+
+  h1 {
+    color: #000;
+    text-align: center;
+    white-space: normal;
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: 48px;
+    font-weight: 800;
+    line-height: 62.4px;
+  }
+
+  .info-wrapper{
+    margin-top: 4em;
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+    align-items: flex-start;
+  }
+  .icon {
+    
+    margin-right: 0.6em;
+    margin-left: 0.6em;
+  }
+
+  .icon a{
+    color: #000508;
+    display: flex;
+     align-items: center;
+  }
+  .icon a:hover {
+    fill: #999999;
+    color: #999999;
+  }
+
+  a{
+    text-decoration: none;
+  }
+</style>

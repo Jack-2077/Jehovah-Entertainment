@@ -107,16 +107,15 @@ import pic4 from "../images/sub-2.jpg";
 
   @media (max-width: 768px){
     .sec-grid{
-      flex-direction: row !important;
       gap: 3.5rem;
     }
 
     .sec-grid img:first-child{
-      width: 40% !important;
+      width: 80% !important;
     }
 
     .sec-grid img:nth-child(2){
-      width: 45% !important;
+      width: 85% !important;
       height: 55% !important;
     }
     .sec-1, .sec-2{
@@ -136,6 +135,12 @@ import pic4 from "../images/sub-2.jpg";
   .item:nth-child(2){
     width: 49%;
   }
+  }
+
+  @media (max-width: 440px) {
+    .wrapper{
+      display: flex;
+    }
   }
 
   .polaroid {

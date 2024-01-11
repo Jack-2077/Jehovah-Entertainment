@@ -1,8 +1,8 @@
 ---
 import { Image } from "astro:assets";
 import Layout from "../layouts/Layout.astro";
-import pic1 from '../images/main-1.jpg';
-import pic2 from '../images/main-2.jpg';
+import pic1 from "../images/main-1.jpg";
+import pic2 from "../images/main-2.jpg";
 import pic3 from "../images/sub-1.jpg";
 import pic4 from "../images/sub-2.jpg";
 ---
@@ -12,31 +12,32 @@ import pic4 from "../images/sub-2.jpg";
     <div class="sec-grid">
       <Image src={pic1} alt="Photobooth setup" />
       <Image src={pic2} alt="Photobooth stand" />
-      </div>
-      <div class="sec-content">
-        <h2>Ready to turn your event into an unforgettable celebration?</h2>
-        <p>
-          Booking your 360-photo booth with us at Yehovah entertainment is as
-          easy as capturing the perfect shot. Contact us today to discuss your
-          event details and let us tailor a photo booth experience our
-          expectations. Are you excited to shoot your favorite gifs,boomerangs
-          and videos through our unique expereince with an affordable pricing?
-          Give us a call and we will help you out to make your event memorable
-          anywhere, anytime.
-        </p>
+    </div>
+    <div class="sec-content">
+      <h2>Ready to turn your event into an unforgettable celebration?</h2>
+      <p>
+        Booking your 360-photo booth with us at Yehovah entertainment is as easy
+        as capturing the perfect shot. Contact us today to discuss your event
+        details and let us tailor a photo booth experience to exceed your
+        expectations. Are you excited to shoot your favorite gifs, boomerangs and
+        videos through our unique expereince with an affordable pricing? Give us
+        a call and we will help you out to make your event memorable anywhere,
+        anytime.
+      </p>
     </div>
   </section>
   <section class="sec-2">
     <div class="sec-content">
-    <p class="content-2">
-      Embark on a journey where innovation meets celebration, and every photo
-      tells a story - choose Yehovah Entertainment's 360 Photobooths for an
-      event that transcends the ordinary. Step away from the conventional and
-      embrace the extraordinary! Our 360- degree photobooths redefine event
-      photography, capturing moments from every angle. The result? Mesmerizing,
-      immersive memories that stand out in a world saturated with ordinary
-      snapshots.
-    </p></div>
+      <p class="content-2">
+        Embark on a journey where innovation meets celebration, and every photo
+        tells a story - choose Yehovah Entertainment's 360 Photobooths for an
+        event that transcends the ordinary. Step away from the conventional and
+        embrace the extraordinary! Our 360- degree photobooths redefine event
+        photography, capturing moments from every angle. The result?
+        Mesmerizing, immersive memories that stand out in a world saturated with
+        ordinary snapshots.
+      </p>
+    </div>
     <div class="wrapper">
       <div class="item">
         <div class="polaroid">
@@ -73,63 +74,61 @@ import pic4 from "../images/sub-2.jpg";
     padding: 20px;
   }
 
-  .sec-2{
+  .sec-2 {
     display: flex;
     align-items: center;
     padding: 20px;
     gap: 5em;
   }
 
-  .content-2{
+  .content-2 {
     min-width: 60%;
   }
-  
-  .sec-grid{
+
+  .sec-grid {
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 5rem;
   }
 
-  .sec-grid img{
+  .sec-grid img {
     width: 55% !important;
     height: 45% !important;
     object-fit: cover;
     border-radius: 30px;
   }
 
-
   .sec-content {
     display: flex;
     flex-direction: column;
   }
 
-
-  @media (max-width: 1200px){
-    .sec-grid{
+  @media (max-width: 1200px) {
+    .sec-grid {
       gap: 3.5rem;
     }
 
-    .sec-grid img:first-child{
+    .sec-grid img:first-child {
       width: 80% !important;
     }
 
-    .sec-grid img:nth-child(2){
+    .sec-grid img:nth-child(2) {
       width: 85% !important;
       height: 55% !important;
     }
-    .sec-1{
+    .sec-1 {
       flex-direction: column-reverse;
     }
 
-    .sec-2{
+    .sec-2 {
       flex-direction: column;
       gap: 1.5em;
     }
   }
 
   @media (max-width: 440px) {
-    .wrapper{
+    .wrapper {
       display: flex;
     }
   }
@@ -151,10 +150,9 @@ import pic4 from "../images/sub-2.jpg";
     transform: scale(0.8, 0.8) rotate(6deg);
   }
 
-  .item:nth-child(2){
+  .item:nth-child(2) {
     width: 59%;
   }
-
 
   .polaroid:before {
     transform: rotate(6deg);

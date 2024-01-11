@@ -105,7 +105,7 @@ import pic4 from "../images/sub-2.jpg";
   }
 
 
-  @media (max-width: 768px){
+  @media (max-width: 1200px){
     .sec-grid{
       gap: 3.5rem;
     }
@@ -118,23 +118,14 @@ import pic4 from "../images/sub-2.jpg";
       width: 85% !important;
       height: 55% !important;
     }
-    .sec-1, .sec-2{
-      flex-direction: column;
+    .sec-1{
+      flex-direction: column-reverse;
     }
 
     .sec-2{
+      flex-direction: column;
       gap: 1.5em;
     }
-  }
-
-  @media (min-width: 768px) and (max-width: 1200px) {
-    .item {
-    width: 30%;
-  }
-
-  .item:nth-child(2){
-    width: 49%;
-  }
   }
 
   @media (max-width: 440px) {

@@ -53,18 +53,6 @@ import pic4 from "../images/sub-2.jpg";
           type="video/mp4"
         /> Your browser does not support the video tag.
       </video>
-      <video
-        preload="auto"
-        loop
-        controls
-        poster="https://cdn-bz-op.fotoshare.co/b/39691/-NnpeWloW66ySEps00pp/2024-01-10_184650961_thumb.jpg"
-        muted
-        playsinline
-        ><source
-          src="https://cdn-bz.fotoshare.co/b/39691/-NnpeWloW66ySEps00pp/2024-01-10_184650961.mp4"
-          type="video/mp4"
-        /> Your browser does not support the video tag.
-      </video>
     </div>
   </section>
   <section class="sec-2">
@@ -131,7 +119,6 @@ import pic4 from "../images/sub-2.jpg";
   .sec-video h3 {
     font-size: 2em;
     margin: 0;
-
   }
 
   .video-container {
@@ -172,13 +159,13 @@ import pic4 from "../images/sub-2.jpg";
   }
 
   @media (max-width: 600px) {
-    .video-container{
+    .video-container {
       flex-direction: column;
       align-items: center;
       gap: 1em;
     }
 
-    .video-container video{
+    .video-container video {
       width: 260px;
     }
   }
